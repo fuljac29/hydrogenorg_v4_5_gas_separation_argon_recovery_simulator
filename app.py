@@ -1,11 +1,12 @@
-
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
 from modules.gas_separation import GasInputs, calculate_gas, interpretation
 
 st.set_page_config(page_title="HydrogenOrg V4.5 Gas Separation & Argon Recovery Simulator", page_icon="🧪", layout="wide")
-st.title("HydrogenOrg V4.5 — Gas Separation & Argon Recovery Simulator")
+st.link_button('← Back to HydrogenOrg', 'https://hydrogenorg.ch/', type='primary')
+st.caption('Navigation update · NAV-02')
+st.sidebar.link_button('← Back to HydrogenOrg', 'https://hydrogenorg.ch/')st.title("HydrogenOrg V4.5 — Gas Separation & Argon Recovery Simulator")
 st.subheader("Integrated Engineering Phase — Module 5")
 st.info("This module estimates H₂/O₂ separation, residual water condensation, Argon recovery, Argon makeup demand, separation energy and safety purge readiness.")
 
